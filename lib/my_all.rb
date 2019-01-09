@@ -2,9 +2,10 @@ require 'pry'
 
 def my_all?(collection)
   i = 0
+  results = []
   while i < collection.length
-    yield(collection[i])
+    results << yield(collection[i])
     i = i + 1
   end
-
+results
 end
